@@ -152,6 +152,11 @@ ul.navbar-nav li.nav-item.active a.nav-link {
     color: #e1ebf5;
 }
 
+ul.navbar-nav li.nav-item a.nav-link:hover,
+ul.navbar-nav li.nav-item.active a.nav-link:hover {
+    color : #fc561f;
+}
+
 nav.navbar.navbar-expand-lg.navbar-light a.navbar-brand {
     color: white;
 }
@@ -169,6 +174,21 @@ div.col-12.col-sm-12.col-md-3.presentation {
 div.col-12.col-sm-12.col-md-3 ul li {
     list-style: none;
     line-height: 2;
+}
+
+div.carousel-caption.d-none.d-md-block {
+    background-color: rgba(124, 188, 226, 0.6);
+    color: #fc561f;
+}
+
+h1.mt-3, h2, span {
+    text-align: center;
+}
+table.table.mt-5 {
+    text-align: center;
+    background-color: #e1ebf5;
+    color: #293540;
+    border: 1px solid #fc561f;
 }
 
 /* ==========================================================================
