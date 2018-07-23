@@ -17,7 +17,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
 
 </head>
 
@@ -42,10 +43,10 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="prices.html">Tarifs</a>
-                    <span class="sr-only">(current)</span>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
+                    <span class="sr-only">(current)</span>
                 </li>
             </ul>
         </div>
@@ -53,79 +54,47 @@
 
     <!-- Begin page content -->
     <main>
-        <div class="row mt-5 pt-4 mb-5 pb-5">
-
-            <div class="col-12 col-sm-12 col-md-6">
-                <h1 class=""> Tarifs des séances</h1>
-                <div class="dropdown-divider"></div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">4</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="row m-3">
+            <div class="col-12 col-md-6 col-lg-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Entrez votre prénom">
+                    </div>
+                    <div class="form-group">
+                        <label for="adress">Adresse</label>
+                        <input type="text" class="form-control" id="adress" placeholder="Entrez votre adresse postale">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Entrez votre numéro de téléphone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Saisissez votre message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+                <iframe class="m-5" width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=3.111169338226319%2C50.58435382612312%2C3.134021759033203%2C50.592473248535605&amp;layer=mapnik&amp;marker=50.58841371235394%2C3.1225955486297607"
+                    style="border: 1px solid #fc561f"></iframe>
+                <br/>
             </div>
-            <div class="col-12 col-sm-12 col-md-6">
-                <div class="form-row justify-content-center">
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Choisissez votre option</label>
-                        <select class="form-control" id="exampleFormControlSelect1" style="width: auto;">
-                            <option>Selectionnez votre option</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Selectionnez le nombre de personnes</label>
-                        <select class="form-control" id="exampleFormControlSelect1" style="width: auto;">
-                            <option>Nombre de personnes</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="responsiveCal">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=amyrussandol%40gmail.com&ctz=Europe%2FParis" style="border: #fc561f"
+                        width="600" height="1000" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12">
-                        <h2>Total de votre commande</h2><br>
-                        <span>Option x pour x personnes : .. € ..</span>
-                        <button type="button" class="btn btn-primary">Confirmer</button>
-                    </div>
-            </div>           
+            </div>
+
         </div>
     </main>
 

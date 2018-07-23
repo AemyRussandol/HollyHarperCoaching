@@ -102,9 +102,47 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+
+@media only screen and (min-width: 35em) {
+    .responsiveCal {
+ 
+        position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+         
+        }
+         
+        .responsiveCal iframe {
+         
+        position: absolute; top:0; left: 0; width: 100%; height: 100%;}
+         
+        div.col-12.col-sm-12.col-md-3.presentation.mb-4 {
+            background-color: #7cbce2;
+            border-right: none;
+        }
+
+        nav.navbar.navbar-expand-lg.navbar-light, nav.navbar.sticky-bottom {
+            background-color: #293540;
+            height: 50px;
+        }
+
+}
+
+@media (min-width: 768px) { 
+    div.col-12.col-sm-12.col-md-3.presentation.mb-4 {
+        background-color: white;
+    }
+ }
+
+/* ==========================================================================
+   dESKTOP
+   ========================================================================== */
+
 /* NAVBAR COLOR */
 
-nav.navbar.navbar-expand-lg.navbar-light {
+nav.navbar.navbar-expand-lg.navbar-light, nav.navbar.sticky-bottom {
     background-color: #293540;
     height: 50px;
 }
@@ -118,23 +156,21 @@ nav.navbar.navbar-expand-lg.navbar-light a.navbar-brand {
     color: white;
 }
 
-div.row {
-    margin: auto;
-}
-
-
-div.carousel.slide {
-    margin: 2% 5% 10% 5%;
-}
 
 div.col-12.col-sm-12.col-md-3 {
+    text-align: justify;
+}
+
+div.col-12.col-sm-12.col-md-3.presentation {
+    border-right: 1px solid #7cbce2;
     text-align: center;
 }
 
-div.form-group {
-    margin-right : 5%;
-    margin-left : 5%;
+div.col-12.col-sm-12.col-md-3 ul li {
+    list-style: none;
+    line-height: 2;
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -224,9 +260,6 @@ div.form-group {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
