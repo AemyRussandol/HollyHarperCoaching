@@ -106,35 +106,36 @@ textarea {
    RESPONSIVE
    ========================================================================== */
 
-
 @media only screen and (min-width: 35em) {
     .responsiveCal {
- 
-        position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
-         
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+    .responsiveCal iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    div.col-12.col-sm-12.col-md-3.presentation.mb-4 {
+        background-color: #7cbce2;
+        border-right: none;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light,
+    nav.navbar.sticky-bottom {
+        background-color: #293540;
+        height: 50px;
+    }
+    /* change navbar background on collapse */
+        nav.navbar {
+            background: #7cbce2;
         }
-         
-        .responsiveCal iframe {
-         
-        position: absolute; top:0; left: 0; width: 100%; height: 100%;}
-         
-        div.col-12.col-sm-12.col-md-3.presentation.mb-4 {
-            background-color: #7cbce2;
-            border-right: none;
-        }
-
-        nav.navbar.navbar-expand-lg.navbar-light, nav.navbar.sticky-bottom {
-            background-color: #293540;
-            height: 50px;
-        }
-
+    
 }
 
-@media (min-width: 768px) { 
-    div.col-12.col-sm-12.col-md-3.presentation.mb-4 {
-        background-color: white;
-    }
- }
 
 /* ==========================================================================
    dESKTOP
@@ -142,33 +143,58 @@ textarea {
 
 /* NAVBAR COLOR */
 
-nav.navbar.navbar-expand-lg.navbar-light, nav.navbar.sticky-bottom {
+/* change navbar background */
+
+nav.navbar.navbar-expand-lg.navbar-light,
+nav.navbar.sticky-bottom {
     background-color: #293540;
     height: 50px;
 }
 
+/* change navbar-brand color */
+
+.navbar a.navbar-brand {
+    color: #e1ebf5;
+}
+
+/*  change navbar li colors, also active one but not disabled one */
+
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+    color: #e1ebf5;
+}
+
+
+
 ul.navbar-nav li.nav-item a.nav-link,
-ul.navbar-nav li.nav-item.active a.nav-link {
+ul.navbar-nav li.nav-item.active a.nav-link,
+nav.navbar.sticky-bottom a.navbar-brand {
     color: #e1ebf5;
 }
 
 ul.navbar-nav li.nav-item a.nav-link:hover,
-ul.navbar-nav li.nav-item.active a.nav-link:hover {
-    color : #fc561f;
+ul.navbar-nav li.nav-item.active a.nav-link:hover,
+.navbar a.navbar-brand:hover {
+    color: #fc561f;
 }
 
 nav.navbar.navbar-expand-lg.navbar-light a.navbar-brand {
     color: white;
 }
 
+.navbar {
+    z-index: 9999;
+}
+
+/* Body */
 
 div.col-12.col-sm-12.col-md-3 {
     text-align: justify;
 }
 
-div.col-12.col-sm-12.col-md-3.presentation {
-    border-right: 1px solid #7cbce2;
+div.col-12.col-sm-12.col-md-3.presentation.mb-4 {
+    border: 1px solid #fc561f;
     text-align: center;
+    background-color: #e1ebf5;
 }
 
 div.col-12.col-sm-12.col-md-3 ul li {
@@ -181,12 +207,14 @@ div.carousel-caption.d-none.d-md-block {
     color: #fc561f;
 }
 
-h1.mt-3, h2, span {
+h1.mt-3,
+h2,
+span {
     text-align: center;
 }
+
 table.table.mt-5 {
     text-align: center;
-    background-color: #e1ebf5;
     color: #293540;
     border: 1px solid #fc561f;
 }
@@ -279,7 +307,6 @@ table.table.mt-5 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
